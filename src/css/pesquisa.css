@@ -1,0 +1,97 @@
+/*CSS DA PESQUISA*/
+
+/*----------- DESKTOP ---------------*/
+
+/*LISTA*/
+.list-element h1 {
+    padding: 0 2%;
+  }
+  
+  .list-element:hover {
+    cursor: pointer;
+    background-color: #8AB2DD;
+  }
+  
+  hr {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    display:block;
+  }
+
+
+  /*BARRA DE PESQUISA*/
+ .barra_pesquisa{
+  background-color: #8AB2DD;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: none;
+  font-family: 'Bellota Text';
+  margin-top: 2vw;
+  position: relative;
+  bottom: 3.6vh;
+ }
+
+ ::placeholder{
+  color: white;
+ }
+
+ .barra_pesquisa:focus{
+  border: none;
+ }
+
+ #icone_pesquisa{
+  margin: auto;
+  position: relative;
+  bottom: 2.3vh;
+  left: -0.5vw;
+
+ }
+
+ .searchContainer{
+  
+  margin: 2vw auto;
+  height: 6vh;
+  
+  border-radius: 1vw;
+ }
+
+ #resultados_pesquisa{
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+ }
+
+ /*----------- MOBILE ---------------*/
+ @media (max-width: 480px) {
+
+  #resultados_pesquisa{
+    height: 83vh;
+    overflow-y: auto
+   }
+
+  .searchContainer{
+    position: relative;
+    width: 100%;
+  }
+
+  #icone_pesquisa{
+    position: absolute;
+    bottom: 4vw;
+    left: 4.5vw;
+  }
+
+  .barra_pesquisa{
+    bottom:0;
+    width:80%;
+    right: -12vw;
+    padding: 2%;
+    }
+
+ }

@@ -1,0 +1,70 @@
+/*CSS DO MENU*/
+
+/*----------- DESKTOP ---------------*/
+#hamburguer{
+    display:none;
+}
+
+#botao_coimbra>button{
+position: relative;
+width: 100%;
+padding: 0.3vw 0.5vw;
+
+cursor: pointer;
+}
+
+/*----------- MOBILE ---------------*/
+@media (max-width: 480px) {
+
+   /*Destaques*/
+   #PagDestaques{
+    overflow: hidden;
+   } 
+   .carousel3 .slick-slider.slick-initialized {
+    height: 110vh;
+  }
+  .carousel3 .slick-dots{
+    bottom:2vh;
+  }
+
+  #localButton, #navLinks, #pesquisa_mobile {
+        display:none;
+    }
+
+    /*BARRA DE CIMA*/
+    #logo_container_mobile{
+        width:100vw;
+    }
+    #logo_mobile{
+        padding: 4vw;
+        margin:  auto;
+    }
+
+    #hamburguer{
+        display:inline-block;
+        padding: 1%;
+
+        position: absolute;
+        left: 2vw;
+        top: 2vw;
+    }
+
+    /*PÁGINA DO MENU*/
+    #gradiente{
+       height: 93.3vh;
+        background-image: url('../imagens/gradiente.svg');
+        background-size: cover; /* ou 'contain' dependendo do efeito desejado */
+        background-repeat: no-repeat;
+    }
+
+    #container_lista{
+        position: relative;
+        top: 40vw;
+    }
+    .separar{
+        border-bottom: 1px solid black;
+    }
+    .position{
+        margin: 5%;
+    }
+}

@@ -1,13 +1,115 @@
+/*Geral*/
 body {
+  font-family: "Bellota Text", sans-serif;
+  color: #000000;
+  overflow-x: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #ffffff;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Tipografia*/
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Menu*/
+#menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.tab > *[class*="nav-link"] {
+  margin-left: auto;
+  padding: 0 4%;
+}
+
+.tab > .nav-link-index:hover,
+.tab > .nav-link-galerias:hover {
+  background-color: #f89668;
+}
+
+.tab > .nav-link-artistas:hover {
+  background-color: #cee6c0;
+}
+
+.tab > .nav-link-agenda:hover {
+  background-color: #8ab2dd;
+}
+
+#navLinks {
+  display: flex;
+  justify-content: right;
+}
+
+#localButton {
+  display: flex;
+  width: 50%;
+  padding: 2% 4%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f89668;
+  border: none;
+  font-size: 2vmin;
+}
+
+/*Footer*/
+#footer {
+  position: sticky;
+
+  bottom: 0;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#footerContact {
+  display: inline-flex;
+  justify-content: right;
+}
+
+@media (max-width: 480px) {
+  #barfooter {
+    display: none;
+  }
+  #root {
+    overflow-x: hidden;
+  }
 }

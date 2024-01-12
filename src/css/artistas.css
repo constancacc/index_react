@@ -1,0 +1,27 @@
+/*CSS DA PÀGINA DA LISTA DE ARTISTAS*/
+.artista-list-element h1 {
+  padding: 0 2%;
+}
+
+/* HOVER */
+.artista-list-element:hover {
+  background-color: #cee6c0;
+}
+
+/* IMAGEM QUE É MOSTRADA COM HOVER */
+.artista-imagem {
+  position: fixed;
+  width: 10%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* LINHA HORIZONTAL */
+hr {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}

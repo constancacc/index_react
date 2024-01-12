@@ -1,0 +1,59 @@
+.slick-slider {
+  width: 100%;
+}
+
+.carousel-content {
+  width: 99%;
+  background-color: #f89668;
+}
+
+.galeriaImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.icons {
+  margin-right: 5px;
+}
+.iconsClock{
+  margin-left: 5px;
+}
+
+.galeria {
+  padding: 0 10%;
+}
+
+.dados {
+  padding: 0 10%;
+  display: inline-flex;
+}
+
+@media screen and (max-width: 881px) {
+  .carousel-content{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  .carousel-content{
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-content{
+    height: 650px;
+  }
+  .galeria h3{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .carousel-content{
+    height: 700px;
+  }
+
+  
+}
